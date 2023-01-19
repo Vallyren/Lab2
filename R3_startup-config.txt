@@ -1,0 +1,105 @@
+!
+version 15.4
+service timestamps log datetime msec
+service timestamps debug datetime msec
+service password-encryption
+!
+hostname R3
+!
+!
+!
+enable secret 5 $1$mERr$WvpW0n5HghRrqnrwXCUUl.
+enable password 7 08701E1D5D4C061E010803
+!
+!
+!
+!
+!
+aaa new-model
+!
+aaa authentication login local_auth local 
+!
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+!
+!
+username admin password 7 082048430017151601181B00
+!
+!
+!
+!
+!
+!
+!
+!
+no ip domain-lookup
+ip domain-name www.netsec.com
+!
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+!
+!
+interface GigabitEthernet0/0/0
+ ip address 10.2.2.1 255.255.255.252
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet0/0/1
+ ip address 192.168.3.1 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+router ospf 1
+ log-adjacency-changes
+ passive-interface GigabitEthernet0/0/1
+ network 10.2.2.0 0.0.0.3 area 0
+ network 192.168.3.0 0.0.0.255 area 0
+!
+router rip
+!
+ip classless
+!
+ip flow-export version 9
+!
+!
+access-list 100 permit udp any any eq bootpc
+!
+no cdp run
+!
+banner motd # Unauthorized Access Prohibited #
+!
+!
+!
+!
+!
+logging trap debugging
+line con 0
+ transport output telnet
+ exec-timeout 5 0
+ login authentication local_auth
+!
+line aux 0
+!
+line vty 0 4
+ login authentication local_auth
+ transport input telnet
+!
+!
+!
+end
+
