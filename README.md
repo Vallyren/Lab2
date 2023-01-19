@@ -7,7 +7,13 @@
 ### Objectives
 #### Part 1: Configure Basic Device Settings
 ##### 	Cable the network as shown in the topology.
-##### 	Configure basic IP addressing for routers and PCs.
+##### Configure basic IP addressing for routers and PCs.
+##### R1
+###### ![R1-1](https://user-images.githubusercontent.com/122459067/213383433-12186c1f-63c8-4502-807f-f09996fa053e.png)
+##### R2
+###### ![R2-1](https://user-images.githubusercontent.com/122459067/213384290-224ac396-22c0-4e6d-8bb9-86683a640ab1.png)
+##### R3
+###### ![R3-1](https://user-images.githubusercontent.com/122459067/213385140-a069b826-1924-4219-b99b-c822d349f055.png)
 ##### 	Configure OSPF routing.
 ##### 	Configure PC hosts.
 ##### 	Verify connectivity between hosts and routers.
