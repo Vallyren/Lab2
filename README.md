@@ -22,8 +22,16 @@
 ###### ![R2-2](https://user-images.githubusercontent.com/122459067/213414538-61c39255-aad4-4bc3-9751-d4c93c16769d.png)
 ##### R3
 ###### ![R3-2](https://user-images.githubusercontent.com/122459067/213414924-1f56fdda-fde0-40d3-bc04-11683506cba7.png)
-##### 	Configure PC hosts.
-##### 	Verify connectivity between hosts and routers.
+##### Configure PC hosts.
+##### PC-A
+###### ![PC-A](https://user-images.githubusercontent.com/122459067/213416099-0a481f46-acfb-4b1b-ab4c-bc739aaf6b6c.png)
+##### PC-C
+###### ![PC-C](https://user-images.githubusercontent.com/122459067/213416604-6d4fa9ec-f5f5-48b6-ad08-84d0618c91ac.png)
+##### Verify connectivity between hosts and routers.
+###### a.	Ping from R1 to R3.
+![ping r1 r3](https://user-images.githubusercontent.com/122459067/213417359-474522b8-dac4-4187-a75d-476678e0ad14.png)
+###### b.	Ping from PC-A, on the R1 LAN, to PC-C, on the R3 LAN.
+![pca tto pcc](https://user-images.githubusercontent.com/122459067/213418796-35877550-a212-443f-8cd4-5122c74d3769.png)
 #### Part 2: Configure Automated Security Features
 ##### 	Lock down a router using AutoSecure and verify the configuration.
 ##### 	Contrast using AutoSecure with manually securing a router using the command line.
