@@ -43,3 +43,27 @@
 ![2023-01-19_15-27-03](https://user-images.githubusercontent.com/122459067/213443065-e74a641e-b40a-4ff5-a3a6-29a3a2b8e98c.png)
 ![2023-01-19_15-27-23](https://user-images.githubusercontent.com/122459067/213443063-c1bdfde9-9959-4e1f-9f8a-0cb91c3de479.png)
 ![2023-01-19_15-27-40](https://user-images.githubusercontent.com/122459067/213443057-a2489e70-4c22-4442-8a8e-11711e22b18f.png)
+##### Contrast the AutoSecure-generated configuration of R3 with the manual configuration of R1.
+###### What security-related configuration changes were performed on R3 by AutoSecure that were not performed in previous sections of the lab on R1?
+AutoSecure: AAA, tcp interception function, logging trap debugging, logging buffering, logging console criticality enabled. Ip http server, cdp and other secondary services are disabled. Console, AUX, and vty inputs are configured for local authentication. A permissive password has been created. The minimum length of security passwords has been changed to 6.
+###### What security-related configuration changes were performed in previous sections of the lab that were not performed by AutoSecure?
+Telnet access was excluded from vty transport input. Additional accounts were created.
+###### Identify at least five unneeded services that were locked down by AutoSecure and at least three security measures applied to each interface.
+Services disabled include:
+no service finger
+no service pad
+no service udp-small-servers
+no service tcp-small-servers
+no cdp run
+no ip bootp server
+no ip http server
+no ip finger
+no ip source-route
+no ip gratuitous-arps
+no ip identd
+For each interface, the following were disabled:
+no ip redirects
+no ip proxy-arp
+no ip unreachables
+no ip directed-broadcast
+no ip mask-reply
