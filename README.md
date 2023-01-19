@@ -67,3 +67,6 @@ no ip proxy-arp
 no ip unreachables
 no ip directed-broadcast
 no ip mask-reply
+###### What are some advantages to using AutoSecure?
+It can detect security vulnerabilities and lock down the router much faster, eliminating the need to use Cisco IOS commands and procedures.
+
