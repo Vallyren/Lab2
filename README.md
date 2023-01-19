@@ -33,5 +33,9 @@
 ###### b.	Ping from PC-A, on the R1 LAN, to PC-C, on the R3 LAN.
 ![pca tto pcc](https://user-images.githubusercontent.com/122459067/213418796-35877550-a212-443f-8cd4-5122c74d3769.png)
 #### Part 2: Configure Automated Security Features
+![2023-01-19_14-28-46](https://user-images.githubusercontent.com/122459067/213434080-320554de-7692-4d15-8eeb-7b0c35d50f6b.png)
+![2023-01-19_14-29-22](https://user-images.githubusercontent.com/122459067/213434077-08f36418-741d-47f2-b074-79349cb6e842.png)
+![2023-01-19_14-34-39](https://user-images.githubusercontent.com/122459067/213434074-fba20314-0f26-4db1-b129-2f4c328912b4.png)
+![2023-01-19_14-42-12](https://user-images.githubusercontent.com/122459067/213434067-5e1147ea-9313-447b-9d5e-7e51627c390e.png)
 ##### 	Lock down a router using AutoSecure and verify the configuration.
 ##### 	Contrast using AutoSecure with manually securing a router using the command line.
